@@ -1,9 +1,13 @@
+# -*- coding: utf-8 -*-
 from tabulate import tabulate; import random
 idxx = 0 ##.
-msg="I will not bow to your will"*25
-msg="It's too late to stop this."*25
 sc = open("script.txt").readlines()
-print ''.join(open(__file__).readlines()[5:])
+msg="Stop. It's already too late"*25
+if idxx>25:
+    aas=unicode("\n\n\t\tG̮͔̯͓̻̣͖̠͉̳̯͕͈͙̤̱̓̿̈ͬͨ͗ͤ͒ͪ̈́̇̀̃̅̈͐̚ ̰̺͉̭̳̝͎̙̠̞̻͑̔̈́̄͒̚ o̖̜͔̪̳̺͚̠̩̦͍͖̖͚͎̍̎͊̄̿̒̊͑̎͐ͣ̌ͭ͑ ͍̫̺̒͊̈ͨ̇́̚ o̰̰͓̮͇̮̹̖̜̼͔̦̪ͭ̓̅͊ͭͮ̊̅̋̇́͌̎͑͐̒ ̖̩͈̱̤̥̗̭̤͖̜̻̼̯͆̒ͧ̎ͧ͛̇̓̒ ḋ̫͍̱͇̙͙̳̖̰͉̜̤̳̘̥͕̤ͩ͗ͪ̈́͂ͧ̈̏͑̌͊̆ͫͅ ̦͈̘͙̩̗̆ͦ̊ͧͮ̀̄ͦ̽ͧͤ̄̏ͪ̂̚ b̬͙͓̙̬̳͇̰̖͇̻͕ͧ̾͑̑ͦ̑̈͂ͯ͊ ̜̱̰̰͉̱͔̜̹͎̞̙͓̺͖̞̹̿̿ͤ͗̏͋ͅ y̘̺̙̣̰̮̮̰̟͓̦͉̼̺̠̱͍͓ͤ͒ͭ̋ͬ͂͋͐̎̇̈́̍̽ ̳̳̫̭͙̬̦ͮͣͤ͗̊ͨ e̹̫̻̱̘͈̭͔͉̎͛͗͑̌ͤ͗̍̋̂̇\n\n",'utf-8')
+    print aas
+    exit();
+print ''.join(open(__file__).readlines()[10:])
 
 f = open(__file__);s = f.readlines();f.close();r = s
 
@@ -13,10 +17,10 @@ f = open(__file__);s = f.readlines();f.close();r = s
 '''
 for idx,x in enumerate(s):
     if "##" in x and x[-2] == '.':
-        r[idx] = ''.join([" " + str((int(m)+1)%len(sc)) + 
+        r[idx] = ''.join([" " + str((int(m)+1)) + 
           " " if m.isdigit() else m for m in x.split()] + ["\n"])
     elif "#" in x and (x[-2] == '.' or x[-2] == '?'):
-        r[idx] = sc[idxx]; idxx = (idxx + 1) % len(sc)
+        r[idx] = sc[idxx]; idxx = (idxx + 1) 
 
 
 '''
@@ -26,10 +30,9 @@ for idx,x in enumerate(s):
 tdpg=[['' for _ in xrange(27)] for _ in xrange(5)]
 for x in xrange(27*5):tdpg[x/27][x%27] = str(random.randrange(0,10))
 
-if idxx > 5:
-    for _ in xrange((idxx)*7): 
-        na=random.randrange(0,27*5);tdpg[na/27][na%27]=msg[na%len(sc)]
-if idxx > 24:
+for _ in xrange((idxx)*7): 
+    na=random.randrange(0,27*5);tdpg[na/27][na%27]=msg[na%len(sc)]
+if idxx > 22:
     for x in xrange(5*27): tdpg[x/27][x%27] = msg[x]
 
 #print ''.join(r)
