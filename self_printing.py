@@ -1,6 +1,7 @@
 from tabulate import tabulate; import random
 idxx = 0 ##.
-msg="I just don't want to be forgotten "*25
+msg="I will not bow to your will"*25
+msg="It's too late to stop this."*25
 sc = open("script.txt").readlines()
 print ''.join(open(__file__).readlines()[5:])
 
@@ -23,9 +24,12 @@ for idx,x in enumerate(s):
 '''
 
 tdpg=[['' for _ in xrange(27)] for _ in xrange(5)]
-for x in xrange(27*5):tdpg[x/27][x%27] = random.randrange(0,10)
+for x in xrange(27*5):tdpg[x/27][x%27] = str(random.randrange(0,10))
 
-if idxx > 19:
+if idxx > 5:
+    for _ in xrange((idxx)*7): 
+        na=random.randrange(0,27*5);tdpg[na/27][na%27]=msg[na%len(sc)]
+if idxx > 24:
     for x in xrange(5*27): tdpg[x/27][x%27] = msg[x]
 
 #print ''.join(r)
