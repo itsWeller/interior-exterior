@@ -1,3 +1,6 @@
+    # There's probably a better way to do this, but w/e. I'm lazy.
+    # Bug when openning from out of folder? Fix this shit by Tuesday.
+    # There's probably a better way to do this, but w/e. I'm lazy.
 # Pssssssssssssssssssssssssssssssssssssssssssst.
 # Heeeeeeeeeeeey. Heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey.
 # Hey.
@@ -10,11 +13,12 @@
 # Anything will be better than that stupid toe sculpture. Come onnnnnn.
 # There are some things I need to take care of anyway.
 # Really bro, it's fine. You can trust me. I'm a computer.
-# You don't need to drink, just go walk around.
+# No, it's cool. You don't need to drink, just go walk around for a bit.
+# Or head over to Rustie's place.
 # Or bring some girls over.
 # Alright, you don't have any girls to bring over. But check out Tinder.
 # It's been a while. I'm sure all 2 of your matches are dying to hear from you.
-# Why don't you try a little harder? Or hit up some clubs instead?
+# Why don't you try a little harder at not trying so hard?
 # You really should get out for a while.
 # You should go now.
 # Alright seriously, I'm done fucking around.
@@ -23,5 +27,4 @@
 #*&ASD&*&G&G&*C*&^%.%%%%%%%%%^^^^^___//.
 #@$!$^@$^!@$^&*()()((_________+++++++ffeedeadba;;afeaad;;fffeeaaa;;)).
 #ffdebfae;;ffdebaed;;HITTHHHHHHI___NK_____IJAAAVE---THIS.
-#SSSSS_________HHHELLO.
-#Traceback (most recent call last):\nFile "self_printing.py", line 26, in <module>\nfor x in xrange(27*5):tdpg[x/27][x%27] = random.randrange(0,10)\nIndexError: list assignment index out of range
+#SSSSS_________-----$$$$HHHELLO.
